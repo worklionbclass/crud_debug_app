@@ -1,0 +1,15 @@
+<h1>멋사 직장인 디버깅 테스트 <small>new.html.erb</small></h1>
+
+<form action="<%= posts_path %>" method="POST">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <div class="form-group">
+    <label for="title">글 제목</label>
+    <input type="text" name="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="title">내용</label>
+    <textarea name="content" class="form-control"></textarea>
+  </div>
+  <a href="<%= posts_path %>" class="btn btn-sm btn-info">돌아가기</a>
+  <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+</form>
