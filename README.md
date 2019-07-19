@@ -13,5 +13,6 @@
   git clone https://github.com/worklionbclass/crud_debug_app
   cd crud_debug_app
   bundle install
+  rake db:migrate
   rails s
 ```
