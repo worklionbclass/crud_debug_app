@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  root "posts#index"
+  root "posts/index" # 맨 마지막에 하자
 
   get "posts/index" => "posts#index"
   get "posts/new" => "posts#new"
   post "posts/create" => "posts#create"
   get "posts/:id/show" => "posts#show"
-  get "posts/:id/edit" => "posts#edit"
+  get "post/edit" => "posts#edit"
   post "posts/:id/update" => "posts#update"
-  get "posts/:id/destroy" => "posts#destroy"
+  get "posts/destroy" => "posts#destroy"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

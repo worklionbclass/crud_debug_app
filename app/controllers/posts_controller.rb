@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = post.all
   end
 
   def show
@@ -14,7 +14,6 @@ class PostsController < ApplicationController
     @post = Post.new(title: params[:title], content: params[:content])
     @post.save
 
-    redirect_to "/posts/index"
   end
 
   def edit
@@ -22,7 +21,6 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:id])
     @post.update(title: params[:title], content: params[:content])
 
     redirect_to "/posts/index"

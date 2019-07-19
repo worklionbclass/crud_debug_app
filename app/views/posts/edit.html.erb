@@ -1,14 +1,13 @@
 <h1>멋사 직장인 디버깅 테스트 <small>edit.html.erb</small></h1>
 
-<form action="/posts/<%= @post.id %>/update" method="POST">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<form action="/posts/<%= post.id %>/update" method="GET">
   <div class="form-group">
     <label for="title">글 제목</label>
-    <input type="text" name="title" class="form-control" value="<%= @post.title %>">
+    <input type="text" name="title" class="form-control" values="<%= post.title %>">
   </div>
   <div class="form-group">
     <label for="title">내용</label>
-    <textarea name="content" class="form-control"><%= @post.content %></textarea>
+    <textarea name="content" class="form-control"><%= post.content %></textarea>
   </div>
   <a href="/posts/index" class="btn btn-sm btn-info">돌아가기</a>
   <button type="submit" class="btn btn-sm btn-primary">Submit</button>

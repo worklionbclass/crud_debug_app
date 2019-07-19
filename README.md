@@ -1,24 +1,17 @@
-# README
+## 멋사 직장인 B반 디버깅 페스티벌
+---
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![image](https://user-images.githubusercontent.com/16815814/61551816-289f0200-aa91-11e9-84d1-24d9f1892758.png)
+버그 무서워하지 마세요!
 
-Things you may want to cover:
+- 해당 코드에는 수많은 버그 코드가 있습니다.
+- [완성본](https://young-island-10448.herokuapp.com/)처럼 나오면 성공입니다.
 
-* Ruby version
+## rails setting
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+  git clone https://github.com/worklionbclass/crud_debug_app
+  cd crud_debug_app
+  bundle install
+  rails s
+```
