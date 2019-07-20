@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "posts/index" # 맨 마지막에 하자
+  root "posts/index"
 
   get "posts/index" => "posts#index"
   get "posts/new" => "posts#new"
