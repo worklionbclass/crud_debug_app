@@ -23,7 +23,7 @@ class PostsController < ApplicationController
   def update
     @post.update(title: params[:title], content: params[:content])
 
-    redirect_to "/posts/index"
+    redirect_to "/posts/#{@post.id}/show"
   end
 
   def destroy
