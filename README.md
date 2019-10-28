@@ -5,7 +5,7 @@
 버그 무서워하지 마세요!
 
 - 해당 코드에는 수많은 버그 코드가 있습니다.
-- [완성본](https://young-island-10448.herokuapp.com/)처럼 나오면 성공입니다.
+- [완성본](https://lit-refuge-07698.herokuapp.com/)처럼 나오면 성공입니다.
 
 ## 초기 작업
 
